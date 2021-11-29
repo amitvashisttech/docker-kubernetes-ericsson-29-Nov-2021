@@ -201,3 +201,40 @@
   967  cd ..
   968  ls
   969  history > 01-Docker-Intro/Day1_History.txt 
+  970  ls
+  971  cd ..
+  972  ls
+  973  git add . ; git commit -m "01-Docker" ; git push 
+  974  ls
+  975  docker ps 
+  976  sl
+  977  ls
+  978  netstat -tulpn
+  979  systemctl stop apache2
+  980  netstat -tulpn
+  981  ls
+  982  curl 172.17.0.8:80
+  983  docker run -d --name myapache-test-5 -p 8080:80 myapache:v3
+  984  docker run -d --name myapache-test-6 -p 8080:80 myapache:v3
+  985  docker ps 
+  986  netstat -tulpn
+  987  docker run -d --name myapache-test-7 -p 8080:80 myapache:v3
+  988  docker run -d --name myapache-test-8 -p 8081:80 nginx
+  989  docker ps 
+  990  netstat -tulpn
+  991  docker ps 
+  992  docker inspect myapache-test-6
+  993  docker inspect myapache-test-7
+  994  docker inspect myapache-test-5
+  995  docker ps 
+  996  docker inspect myapache-test-6
+  997  docker inspect myapache-test-8
+  998  netstat -tulpn
+  999  systemctl status docker 
+ 1000  ip addr 
+ 1001  ls
+ 1002  cd 01-Docker/
+ 1003  ls
+ 1004  cd 01-Docker-Intro/
+ 1005  ls
+ 1006  history > Day1_History.txt 
