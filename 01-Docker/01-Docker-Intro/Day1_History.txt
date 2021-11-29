@@ -238,3 +238,63 @@
  1004  cd 01-Docker-Intro/
  1005  ls
  1006  history > Day1_History.txt 
+ 1007  ls
+ 1008  cd ..
+ 1009  ls
+ 1010  cd ..
+ 1011  git add . ; git commit -m "01-Docker" ; git push 
+ 1012  ls
+ 1013  docker network ls 
+ 1014  ls
+ 1015  docker network ls 
+ 1016  docker network inspect bridge
+ 1017  \
+ 1018  docker network create --driver=bridge --subnet=172.28.0.0/16 --ip-range=172.28.5.0/24 --gateway=172.28.5.1 mybr0 
+ 1019  ls
+ 1020  docker network ls 
+ 1021  docker network inspect mybr0
+ 1022  docker images 
+ 1023  docker run -d --name apache-nw-test-1 --network mybr0 -p 8085:80 myapache:v3
+ 1024  docker ps 
+ 1025  docker inspect apache-nw-test-1
+ 1026  curl 172.28.5.0
+ 1027  ls
+ 1028  docker ps 
+ 1029  docker run -d --name apache-nw-test-6 --network mybr0 -p 8085:80 myapache:v3
+ 1030  docker run -d --name apache-nw-test-7 --network mybr0 -P myapache:v3
+ 1031  docker ps 
+ 1032  docker run -d --name apache-nw-test-7 --network mybr0 -P myapache:v3
+ 1033  docker run -d --name apache-nw-test-8 --network mybr0 -P myapache:v3
+ 1034  netstat -tulnp 
+ 1035  docker images 
+ 1036  docker run -d --name apache-nw-test-9 --network mybr0 -P myapache:v3
+ 1037  docker ps 
+ 1038  docker inspect apache-nw-test-9
+ 1039  docker run -d --name apache-nw-test-10 -P myapache:v3
+ 1040  docker inspect apache-nw-test-10
+ 1041  docker inspect apache-nw-test-9
+ 1042  vi /etc/docker/key.json 
+ 1043  cd /var/lib/docker/
+ 1044  ls
+ 1045  cd 
+ 1046  ls
+ 1047  docker inpect --format '{{.Name}} {{.NetworkSettings.IPAddress}}' apache-nw-test-10
+ 1048  docker inspect --format '{{.Name}} {{.NetworkSettings.IPAddress}}' apache-nw-test-10
+ 1049  docker inspect --format '{{.Name}} {{.NetworkSettings.IPAddress}}' $(docker ps -q) 
+ 1050  docker inspect /apache-nw-test-9
+ 1051  docker inspect --format '{{.Name}} {{.NetworkSettings.IPAddress}}' $(docker ps -q) 
+ 1052  docker inspect --format '{{.Name}} {{.NetworkSettings.Networks.*.IPAddress}}' $(docker ps -q) 
+ 1053  docker inspect --format '{{.Name}} {{.NetworkSettings.Networks.mybr0.IPAddress}}' $(docker ps -q) 
+ 1054  docker inspect --format '{{.Name}} {{.NetworkSettings.IPAddress}}' $(docker ps -q) 
+ 1055  ls
+ 1056  docker kill $(docker ps -q) 
+ 1057  docker run -d --name apache-nw-test-11 -P myapache:v3
+ 1058  docker inspect apache-nw-test-11
+ 1059  ls
+ 1060  cd docker-kubernetes-ericsson-29-Nov-2021/
+ 1061  ls
+ 1062  cd 01-Docker/
+ 1063  ls
+ 1064  history 
+ 1065  ls
+ 1066  history > 01-Docker-Intro/Day1_History.txt 
