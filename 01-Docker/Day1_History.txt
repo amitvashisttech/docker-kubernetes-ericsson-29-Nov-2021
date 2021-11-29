@@ -1,0 +1,69 @@
+  767  ls
+  768  docker version 
+  769  docker ps 
+  770  docker run ubuntu echo "Welcome to the world of docker."
+  771  docker ps 
+  772  docker container ls 
+  773  docker ps -a
+  774  docker container ls -a 
+  775  "hello world" 
+  776  echo "hello world" 
+  777  echo $?
+  778  ls
+  779  cd 
+  780  ls
+  781  cd docker-kubernetes-ericsson-29-Nov-2021/
+  782  ls
+  783  cd 01-Docker/
+  784  ls
+  785  cd 00-Setup/
+  786  ls
+  787  cat install-docker.sh 
+  788  ls
+  789  cd 
+  790  ls
+  791  cd docker-kubernetes-ericsson-29-Nov-2021/
+  792  s
+  793  ;s
+  794  ls
+  795  cd ..
+  796  ls
+  797  docker run ubuntu echo "Hello World" 
+  798  docker run ubuntu:16.04 echo "Hello World" 
+  799  docker images 
+  800  docker run centos:7 echo "Hello World" 
+  801  ls
+  802  cd docker-kubernetes-ericsson-29-Nov-2021/
+  803  ls
+  804  cd 01-Docker/
+  805  ls
+  806  cd 00-Setup/
+  807  ls
+  808  cd ..
+  809  ls
+  810  git add . 
+  811  git commit -m "Docker Setup Script" 
+  812  git push 
+  813  ls
+  814  docker ps 
+  815  docker ps -a 
+  816  docker run -it ubuntu:16.04 
+  817  docker ps 
+  818  docker ps -a 
+  819  docker start dd3025655fa1
+  820* 
+  821  docker attach dd3025655fa1
+  822  docker ps 
+  823  docker ps -q
+  824  docker stop $(docker ps -q) 
+  825  docker ps 
+  826  docker ps -a 
+  827  docker ps -a
+  828  docker ps -aq
+  829  docker rm $(docker ps -aq) 
+  830  docker ps -a 
+  831  ls
+  832  cd 01-Docker/
+  833  sl
+  834  ls
+  835  history > Day1_History.txt 
