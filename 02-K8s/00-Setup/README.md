@@ -37,7 +37,7 @@ Note :
 vagrant.exe ssh master
 sudo su - 
 git clone To https://github.com/amitvashisttech/docker-kubernetes-ericsson-29-Nov-2021.git
-cd docker-kubernetes-ericsson-29-Nov-2021/02-Kubernetes/00-Setup
+cd docker-kubernetes-ericsson-29-Nov-2021/02-K8s/00-Setup
 sh install-k8s-master-node.sh
 
 ---
