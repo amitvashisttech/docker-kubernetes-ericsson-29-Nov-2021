@@ -1,4 +1,5 @@
- 1052  cd 03-KubeApi/
+``` 
+1052  cd 03-KubeApi/
  1053  ls
  1054  kubectl get pods -n kube-system 
  1055  kubectl get pods -n kube-system | grep -i apiserver
@@ -58,3 +59,4 @@
  1109  cd 03-KubeApi/
  1110  ls
  1111  history > README.md 
+```
