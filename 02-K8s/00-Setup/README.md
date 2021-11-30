@@ -76,7 +76,7 @@ k8s-master   Ready    master   5m6s   v1.18.0
 ```
 vagrant.exe ssh woker1
 sudo su - 
-git clone To https://github.com/amitvashisttech/docker-kubernetes-ericsson-29-Nov-2021.git
+git clone https://github.com/amitvashisttech/docker-kubernetes-ericsson-29-Nov-2021.git
 cd docker-kubernetes-ericsson-29-Nov-2021/02-K8s/00-Setup
 sh install-k8s-worker-node.sh
 ```
